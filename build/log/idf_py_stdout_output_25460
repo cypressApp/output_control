@@ -1,0 +1,102 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e2_output_control\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/TcpServer.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c: In function 'receiving_tcp_data':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:65:10: warning: unused variable 'temp_rx_buffer' [-Wunused-variable]
+   65 |     char temp_rx_buffer[5];
+      |          ^~~~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c: In function 'tcp_server_task':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:256:33: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  256 |                     xTaskCreate(receiving_tcp_data, "receiving_tcp_data", TCP_SERVER_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 void (*)(int,  int)
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:444:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(int,  int)'
+  444 |                             TaskFunction_t pvTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:256:104: warning: passing argument 4 of 'xTaskCreate' makes pointer from integer without a cast [-Wint-conversion]
+  256 |                     xTaskCreate(receiving_tcp_data, "receiving_tcp_data", TCP_SERVER_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                                                                                        ^~~~
+      |                                                                                                        |
+      |                                                                                                        int
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:447:42: note: expected 'void * const' but argument is of type 'int'
+  447 |                             void * const pvParameters,
+      |                             ~~~~~~~~~~~~~^~~~~~~~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable e2_output_control.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/e2_output_control.bin
+[7/8] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e2_output_control\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/partition_table/partition-table.bin" "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/e2_output_control.bin""
+e2_output_control.bin binary size 0xb1c00 bytes. Smallest app partition is 0x100000 bytes. 0x4e400 bytes (31%) free.
+[7/8] cmd.exe /C "cd /D C:\esp\esp-idf-v5.0.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf-v5.0.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe;;C:/esp/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build" -P C:/esp/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 e2_output_control.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM3
+Connecting......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b5:55:24:22:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c1fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26384 bytes to 16455...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ad... (100 %)
+Wrote 26384 bytes (16455 compressed) at 0x00001000 in 0.9 seconds (effective 240.8 kbit/s)...
+Hash of data verified.
+Compressed 728064 bytes to 469719...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c1c6... (6 %)
+Writing at 0x00023c8d... (10 %)
+Writing at 0x000291d8... (13 %)
+Writing at 0x000323a6... (17 %)
+Writing at 0x00037bb9... (20 %)
+Writing at 0x0003d3f0... (24 %)
+Writing at 0x0004298f... (27 %)
+Writing at 0x00048302... (31 %)
+Writing at 0x0004da4f... (34 %)
+Writing at 0x000532d1... (37 %)
+Writing at 0x0005907b... (41 %)
+Writing at 0x0005e8d8... (44 %)
+Writing at 0x00063a8c... (48 %)
+Writing at 0x00068edd... (51 %)
+Writing at 0x0006e295... (55 %)
+Writing at 0x000738ad... (58 %)
+Writing at 0x000790a4... (62 %)
+Writing at 0x0007ecd9... (65 %)
+Writing at 0x0008449d... (68 %)
+Writing at 0x00089f67... (72 %)
+Writing at 0x00090343... (75 %)
+Writing at 0x00095dec... (79 %)
+Writing at 0x0009ce9c... (82 %)
+Writing at 0x000a68ac... (86 %)
+Writing at 0x000ad54d... (89 %)
+Writing at 0x000b2f70... (93 %)
+Writing at 0x000b8a97... (96 %)
+Writing at 0x000be001... (100 %)
+Wrote 728064 bytes (469719 compressed) at 0x00010000 in 10.8 seconds (effective 540.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 322.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

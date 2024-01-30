@@ -1,0 +1,146 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Project is not inside a git repository, or git repository has no commits; will not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+Processing 2 dependencies:
+[1/2] espressif/led_strip (2.3.0)
+[2/2] idf (5.0.1)
+-- Project sdkconfig file C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/sdkconfig
+-- App "e2_output_control" version: 1
+-- Adding linker script C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script C:/esp/esp-idf-v5.0.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__led_strip esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/esp/esp-idf-v5.0.1/components/app_trace C:/esp/esp-idf-v5.0.1/components/app_update C:/esp/esp-idf-v5.0.1/components/bootloader C:/esp/esp-idf-v5.0.1/components/bootloader_support C:/esp/esp-idf-v5.0.1/components/bt C:/esp/esp-idf-v5.0.1/components/cmock C:/esp/esp-idf-v5.0.1/components/console C:/esp/esp-idf-v5.0.1/components/cxx C:/esp/esp-idf-v5.0.1/components/driver C:/esp/esp-idf-v5.0.1/components/efuse C:/esp/esp-idf-v5.0.1/components/esp-tls C:/esp/esp-idf-v5.0.1/components/esp_adc C:/esp/esp-idf-v5.0.1/components/esp_app_format C:/esp/esp-idf-v5.0.1/components/esp_common C:/esp/esp-idf-v5.0.1/components/esp_eth C:/esp/esp-idf-v5.0.1/components/esp_event C:/esp/esp-idf-v5.0.1/components/esp_gdbstub C:/esp/esp-idf-v5.0.1/components/esp_hid C:/esp/esp-idf-v5.0.1/components/esp_http_client C:/esp/esp-idf-v5.0.1/components/esp_http_server C:/esp/esp-idf-v5.0.1/components/esp_https_ota C:/esp/esp-idf-v5.0.1/components/esp_https_server C:/esp/esp-idf-v5.0.1/components/esp_hw_support C:/esp/esp-idf-v5.0.1/components/esp_lcd C:/esp/esp-idf-v5.0.1/components/esp_local_ctrl C:/esp/esp-idf-v5.0.1/components/esp_netif C:/esp/esp-idf-v5.0.1/components/esp_partition C:/esp/esp-idf-v5.0.1/components/esp_phy C:/esp/esp-idf-v5.0.1/components/esp_pm C:/esp/esp-idf-v5.0.1/components/esp_psram C:/esp/esp-idf-v5.0.1/components/esp_ringbuf C:/esp/esp-idf-v5.0.1/components/esp_rom C:/esp/esp-idf-v5.0.1/components/esp_system C:/esp/esp-idf-v5.0.1/components/esp_timer C:/esp/esp-idf-v5.0.1/components/esp_wifi C:/esp/esp-idf-v5.0.1/components/espcoredump C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/managed_components/espressif__led_strip C:/esp/esp-idf-v5.0.1/components/esptool_py C:/esp/esp-idf-v5.0.1/components/fatfs C:/esp/esp-idf-v5.0.1/components/freertos C:/esp/esp-idf-v5.0.1/components/hal C:/esp/esp-idf-v5.0.1/components/heap C:/esp/esp-idf-v5.0.1/components/http_parser C:/esp/esp-idf-v5.0.1/components/idf_test C:/esp/esp-idf-v5.0.1/components/ieee802154 C:/esp/esp-idf-v5.0.1/components/json C:/esp/esp-idf-v5.0.1/components/log C:/esp/esp-idf-v5.0.1/components/lwip C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main C:/esp/esp-idf-v5.0.1/components/mbedtls C:/esp/esp-idf-v5.0.1/components/mqtt C:/esp/esp-idf-v5.0.1/components/newlib C:/esp/esp-idf-v5.0.1/components/nvs_flash C:/esp/esp-idf-v5.0.1/components/openthread C:/esp/esp-idf-v5.0.1/components/partition_table C:/esp/esp-idf-v5.0.1/components/perfmon C:/esp/esp-idf-v5.0.1/components/protobuf-c C:/esp/esp-idf-v5.0.1/components/protocomm C:/esp/esp-idf-v5.0.1/components/pthread C:/esp/esp-idf-v5.0.1/components/sdmmc C:/esp/esp-idf-v5.0.1/components/soc C:/esp/esp-idf-v5.0.1/components/spi_flash C:/esp/esp-idf-v5.0.1/components/spiffs C:/esp/esp-idf-v5.0.1/components/tcp_transport C:/esp/esp-idf-v5.0.1/components/ulp C:/esp/esp-idf-v5.0.1/components/unity C:/esp/esp-idf-v5.0.1/components/usb C:/esp/esp-idf-v5.0.1/components/vfs C:/esp/esp-idf-v5.0.1/components/wear_levelling C:/esp/esp-idf-v5.0.1/components/wifi_provisioning C:/esp/esp-idf-v5.0.1/components/wpa_supplicant C:/esp/esp-idf-v5.0.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build
+[1/17] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e2_output_control\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6710 bytes. 0x8f0 bytes (8%) free.
+[2/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_info_handler.c.obj
+[3/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/adc_handler.c.obj
+[4/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/AccessPointMode.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/AccessPointMode.c: In function 'wifi_event_handler':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/AccessPointMode.c:8:39: warning: unused variable 'event' [-Wunused-variable]
+    8 |         wifi_event_ap_staconnected_t* event = (wifi_event_ap_staconnected_t*) event_data;
+      |                                       ^~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/AccessPointMode.c:12:42: warning: unused variable 'event' [-Wunused-variable]
+   12 |         wifi_event_ap_stadisconnected_t* event = (wifi_event_ap_stadisconnected_t*) event_data;
+      |                                          ^~~~~
+[5/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/params.c.obj
+[6/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/GPIO.c.obj
+[7/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[8/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/StationMode.c.obj
+[9/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/TcpServer.c.obj
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c: In function 'receiving_tcp_data':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:130:120: warning: passing argument 4 of 'xTaskCreate' makes pointer from integer without a cast [-Wint-conversion]
+  130 |                 xTaskCreate(check_tcp_recv_timeout_task, "check_tcp_recv_timeout", CHECK_TCP_TIMEOUT_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                                                                                                        ^~~~
+      |                                                                                                                        |
+      |                                                                                                                        int
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:447:42: note: expected 'void * const' but argument is of type 'int'
+  447 |                             void * const pvParameters,
+      |                             ~~~~~~~~~~~~~^~~~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c: In function 'tcp_server_task':
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:253:33: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+  253 |                     xTaskCreate(receiving_tcp_data, "receiving_tcp_data", TCP_SERVER_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                 ^~~~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 void (*)(int,  int)
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:444:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(int,  int)'
+  444 |                             TaskFunction_t pvTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:253:104: warning: passing argument 4 of 'xTaskCreate' makes pointer from integer without a cast [-Wint-conversion]
+  253 |                     xTaskCreate(receiving_tcp_data, "receiving_tcp_data", TCP_SERVER_TASK_STACK_DEPTH, sock , 5, NULL);
+      |                                                                                                        ^~~~
+      |                                                                                                        |
+      |                                                                                                        int
+In file included from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/context.h:2,
+                 from C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/main/TcpServer.c:1:
+C:/esp/esp-idf-v5.0.1/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:447:42: note: expected 'void * const' but argument is of type 'int'
+  447 |                             void * const pvParameters,
+      |                             ~~~~~~~~~~~~~^~~~~~~~~~~~
+[10/15] Linking C static library esp-idf\main\libmain.a
+[11/15] Generating ld/sections.ld
+[12/15] Linking CXX executable e2_output_control.elf
+[13/15] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/e2_output_control.bin
+[14/15] cmd.exe /C "cd /D "C:\Users\35192\Desktop\Cypress\Terminal\Cypress Terminal Platform\e2_output_control\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.8_env\Scripts\python.exe C:/esp/esp-idf-v5.0.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/partition_table/partition-table.bin" "C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build/e2_output_control.bin""
+e2_output_control.bin binary size 0xb3a70 bytes. Smallest app partition is 0x100000 bytes. 0x4c590 bytes (30%) free.
+[14/15] cmd.exe /C "cd /D C:\esp\esp-idf-v5.0.1\components\esptool_py && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf-v5.0.1 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.0_py3.8_env/Scripts/python.exe;;C:/esp/esp-idf-v5.0.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/35192/Desktop/Cypress/Terminal/Cypress Terminal Platform/e2_output_control/build" -P C:/esp/esp-idf-v5.0.1/components/esptool_py/run_serial_tool.cmake"
+esptool esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 e2_output_control.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.5.1
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 94:b5:55:24:22:6c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000c3fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26384 bytes to 16455...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076ad... (100 %)
+Wrote 26384 bytes (16455 compressed) at 0x00001000 in 0.9 seconds (effective 241.2 kbit/s)...
+Hash of data verified.
+Compressed 735856 bytes to 473256...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001c603... (6 %)
+Writing at 0x0002468f... (10 %)
+Writing at 0x000299c4... (13 %)
+Writing at 0x00032111... (17 %)
+Writing at 0x00037910... (20 %)
+Writing at 0x0003d52f... (24 %)
+Writing at 0x00042ac6... (27 %)
+Writing at 0x00048314... (31 %)
+Writing at 0x0004da74... (34 %)
+Writing at 0x0005334e... (37 %)
+Writing at 0x00058fa7... (41 %)
+Writing at 0x0005ead5... (44 %)
+Writing at 0x00063c88... (48 %)
+Writing at 0x0006905f... (51 %)
+Writing at 0x0006e2fd... (55 %)
+Writing at 0x00073a6d... (58 %)
+Writing at 0x00079196... (62 %)
+Writing at 0x0007edb5... (65 %)
+Writing at 0x0008446d... (68 %)
+Writing at 0x00089dae... (72 %)
+Writing at 0x00090478... (75 %)
+Writing at 0x00095c39... (79 %)
+Writing at 0x0009c223... (82 %)
+Writing at 0x000a6167... (86 %)
+Writing at 0x000ac75c... (89 %)
+Writing at 0x000b3aff... (93 %)
+Writing at 0x000b9426... (96 %)
+Writing at 0x000becb8... (100 %)
+Wrote 735856 bytes (473256 compressed) at 0x00010000 in 10.9 seconds (effective 540.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 311.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
